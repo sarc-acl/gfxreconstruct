@@ -1,0 +1,9 @@
+# Issue: how to tell clangd which compile_commands.json file to use? The location is different
+# for Android vs Host, Debug vs Release, and for each host. .clangd does not seem to support this
+# as far as I can see.
+CompileFlags:
+    CompilationDatabase: android/tools/replay/.cxx/tools/release/arm64-v8a
+    # host linux release
+    # CompilationDatabase: build/linux/x64/cmake_output/
+    # host linux debug
+    # CompilationDatabase: dbuild/linux/x64/cmake_output/
